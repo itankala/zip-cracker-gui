@@ -1,4 +1,4 @@
-ZIP Password Cracker v1.0
+ZIP Password Cracker v1.0.1
 ===========================
 
 A GUI-based tool that uses a dictionary attack to find the password of a ZIP file.

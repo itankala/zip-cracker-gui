@@ -23,7 +23,6 @@ class Cracker:
         #set up variables
         self.archFileMade = False
         self.dictFilename = ""
-        self.finished = False
         
         #set up all widgets and their layout
         self.openZipLabel = Label(frame, text = "Select ZIP file:")
@@ -120,6 +119,7 @@ class Cracker:
             self.outputText.delete(1.0, END)
             self.outputText.insert(END, "Cracking...")
             self.outputText.config(state = DISABLED)
+            self.finished = False
 
             #open dict file
             dictFile = open(self.dictFilename, 'r')
